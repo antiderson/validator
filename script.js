@@ -111,7 +111,7 @@ function verificar() {
     }
 }
 
-btn.addEventListener('click', debounce(verificar, 5000))
+btn.addEventListener('click', debounce(verificar, 1000))
 
 function debounce(func, wait) {
     let timer = null;
