@@ -16,6 +16,7 @@ function mudaCor(campo, cor) {
     document.getElementById(`${campo}`).style.borderColor = cor;
 }
 
+//função de verificar se o botão esta habilitado
 function fnCheckBtn() {
     let isValid = true;
     if (nome.value == "" || nome.value.length < 3 || nome.value.length > 25) isValid = false;
@@ -83,6 +84,7 @@ rsenha.addEventListener('blur', ({ target }) => {
     fnCheckBtn();
 })
 
+//função que verifica no array se o usuario || email ja esta registrado no sistema
 function verificar() {
     let usuario = {
         username: nome.value,
